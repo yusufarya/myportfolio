@@ -1,25 +1,33 @@
 
-
 hr.divider {
 	margin: auto;
 	width: 431px;
 }
 
+
 .jumbotron {
     padding: 0;
     margin: 0;
+	height: 500px;
     width: 100%;
     padding-top: 6rem;
-    background-color: #f7f2f2;
+    /* background-color: #f7f2f2; */
+	background-image: url('../img/project/2.jpg');
+	background-attachment: fixed;
+    /* filter: grayscale(1); */
+    opacity: 0.8 !important;
 }
 
 .jumbotron p {
-	color: #000;
+	color: rgb(255, 255, 255);
+	text-shadow: 5px 6px 3px rgb(0, 0, 0);
 }
 
-img {
+.jumbotron img {
 	margin: 10px 0;
 }
+
+
 
 /* OVERLAY */
 .overlay {
@@ -144,8 +152,11 @@ h1 {
 	transform: translate(0, 0);
 }
 
-#project {
-    background-color: #f7f2f2;
+.services {
+	background-image: url('../img/project/3.jpg');
+	background-attachment: fixed;
+    /* filter: grayscale(1); */
+    opacity: 0.8 !important;
 }
 
 section {
@@ -171,6 +182,14 @@ section {
 }
 /*End*/
 
+.card-panel {
+	height:510px;
+}
+
+.card-panel img {
+	height: 280px ;
+}
+
 section .contact {
 	opacity: 0;
     padding-top: 5rem;
@@ -181,12 +200,17 @@ section.muncul {
 	opacity: 1;
 }
 
-.button a img {
+.button a img{
 	position: fixed;
+	margin: 10px;
 	bottom: 50px;
 	width: 800px;
 	height: 90px;
-	background-color: green;
+}
+
+.button a .wa {
+	color: black;
+	width: 2000px;
 }
 
 footer {
@@ -202,6 +226,7 @@ footer {
         transform: scale(0);
         opacity: 0;
     }
+}
 
 @keyframes slideDownFade {
     0% {
